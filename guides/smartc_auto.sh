@@ -18,6 +18,7 @@ sudo apt-get install libdb4.8-dev libdb4.8++-dev -y
 
 cd
 #remove old files
+rm -rf /root/.smrtc/
 rm smrtc*
 
 #wget https://github.com/telostia/smartcloud-guides/raw/master/wallet/linux64/smrtc-linux.tar.gz
