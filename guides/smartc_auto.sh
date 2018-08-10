@@ -32,8 +32,8 @@ ufw allow 9887/tcp
 
 #masternode input
 
-echo -e "${GREEN}Now paste your Masternode key by using right mouse click ${NONE}";
-read MNKEY
+#echo -e "${GREEN}Now paste your Masternode key by using right mouse click ${NONE}";
+#read MNKEY
 
 EXTIP=`curl -s4 icanhazip.com`
 USER=`pwgen -1 20 -n`
