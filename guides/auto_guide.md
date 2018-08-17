@@ -49,9 +49,15 @@ Log into your linux Vps and copy the below line and press enter:
 (smrtc codebase)
 * cd && bash -c "$(wget -O - https://raw.githubusercontent.com/telostia/smartcloud-guides/master/guides/smartc_auto.sh)"
 
-(posq codebase)
-* cd && bash -c "$(wget -O - https://raw.githubusercontent.com/telostia/smartcloud-guides/master/guides/posqsmartc_auto.sh)"
 
+MN SCRIPT
+* cd && bash -c "$(wget -O - https://raw.githubusercontent.com/telostia/smartcloud-guides/master/guides/mn_smartc_auto.sh)"
+
+
+
+<!--(posq codebase)
+# cd && bash -c "$(wget -O - https://raw.githubusercontent.com/telostia/smartcloud-guides/master/guides/posqsmartc_auto.sh)"
+-->
 when asked to paste genkey, right click your mouse and press enter.
 
 
