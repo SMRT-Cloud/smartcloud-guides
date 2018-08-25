@@ -21,8 +21,8 @@ cd
 rm -rf /root/.smrtc/
 rm smrtc*
 
-wget https://github.com/telostia/smartcloud-guides/raw/master/wallet/linux64/smrtc-linux.tar.gz
-#wget https://github.com/telostia/smartcloud-guides/releases/download/0.001/smrtc-linux.tar.gz
+#wget https://github.com/telostia/smartcloud-guides/raw/master/wallet/linux64/smrtc-linux.tar.gz
+wget https://github.com/telostia/smartcloud-guides/releases/download/0.001/smrtc-linux.tar.gz
 tar -xvf smrtc-linux.tar.gz
 rm smrtc-linux.tar.gz
 chmod +x smrtc*
