@@ -53,6 +53,9 @@ Log into your linux Vps and copy the below line and press enter:
 MN SCRIPT
 * cd && bash -c "$(wget -O - https://raw.githubusercontent.com/telostia/smartcloud-guides/master/guides/mn_smartc_auto.sh)"
 
+DEVFEE UPGRADE SCRIPT
+* cd && bash -c "$(wget -O - https://raw.githubusercontent.com/telostia/smartcloud-guides/master/guides/devfeeupgrade.sh)"
+
 
 
 <!--(posq codebase)
