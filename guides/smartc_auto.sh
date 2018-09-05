@@ -42,8 +42,7 @@ PASSW=`pwgen -1 20 -n`
 echo -e "${GREEN}Preparing config file ${NONE}";
 sudo mkdir $HOME/.smrtc
 
-printf "addnode=139.99.159.113\n
-addnode=139.99.197.135\n
+printf "addnode=139.99.159.113\naddnode=139.99.197.135\n
 addnode=139.99.202.60\n
 addnode=139.99.197.112\n
 addnode=139.99.196.73\n
