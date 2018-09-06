@@ -6,10 +6,8 @@ SMARTCLOUD COIN SIMPLE AUTO MASTER NODE SETUP GUIDE
 Windows wallet setup
 -----------------------------
 
-Download windows wallet from these locations:
-for 32bit: 
-
-for 64bit: 
+Download windows wallet from the follow location:
+https://github.com/SMRT-Cloud/smrtc/releases/tag/v1.0.0
 
 
 run it. if you cannot get it to sync. got to windows start and type:
@@ -20,14 +18,12 @@ find the "SMRTC" folder and double click on it.
 right click on "smrtc.conf" and open it with notepad or any text editor.
 When file is loaded, add more nodes by copy and paste this:
 
-* addnode=
-* addnode=
-* addnode=
-* addnode=
-* addnode=
-* addnode=
-* addnode=
-* addnode=
+* addnode=139.99.159.113
+* addnode=139.99.196.73
+* addnode=139.99.202.60
+* addnode=139.99.197.112
+* addnode=139.99.158.38
+* addnode=139.99.159.77
 
 save file and exit.
 
@@ -46,17 +42,8 @@ now move on to linux vps setup.
 ----------------------
 Log into your linux Vps and copy the below line and press enter:
 
-(smrtc codebase)
-* cd && bash -c "$(wget -O - https://raw.githubusercontent.com/telostia/smartcloud-guides/master/guides/smartc_auto.sh)"
-
-
 MN SCRIPT
 * cd && bash -c "$(wget -O - https://raw.githubusercontent.com/telostia/smartcloud-guides/master/guides/mn_smartc_auto.sh)"
-
-DEVFEE UPGRADE SCRIPT
-* cd && bash -c "$(wget -O - https://raw.githubusercontent.com/telostia/smartcloud-guides/master/guides/devfeeupgrade.sh)"
-
-
 
 <!--(posq codebase)
 # cd && bash -c "$(wget -O - https://raw.githubusercontent.com/telostia/smartcloud-guides/master/guides/posqsmartc_auto.sh)"
@@ -88,12 +75,20 @@ Alias Address Privkey TxHash Output_index
 from: Settings - Options - Wallet - Show Masternodes Tab 
 11.   Click Update status to see your node. If it is not shown, close the wallet and 
 start it again. Make sure the wallet is unlocked. 
-12.   Open Debug Console and type: 
+12.   Theres two choices to make. Use the debug menu or using the butons to start-alias.
+
+OPTION 1(DEBUG MENU):
+Open Debug Console and type: 
 masternode start-alias 0 [alias] 
 
 sample for mn1:
 masternode start-alias 0 mn1
 
-Complete! Thank you for joining the revival smart coin.
+ OR
+ OPTION 2(GUI buttons):
+ Click on the main "Masternodes" tab. Select the appropriate mn you want on the list and either right click "Start alias" or
+ use the "Start alias" button on the bottom. If you want to start all masternodes on the list, click on "Start All" button on the bottom of the screen.
+
+Complete! Thank you for joining the smart cloud coin.
 
  
