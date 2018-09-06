@@ -17,16 +17,17 @@ sudo apt-get update -y
 sudo apt-get install libdb4.8-dev libdb4.8++-dev -y
 
 cd
+#backup old wallet if running hot! and somehow reran the script...
+cp /root/.smrtc/wallet.dat /root/backupsmrtcwallet.dat
 #remove old files
 rm -rf /root/.smrtc/
 rm smrtc*
 
-#wget https://github.com/telostia/smartcloud-guides/raw/master/wallet/linux64/smrtc-linux.tar.gz
 wget https://github.com/telostia/smartcloud-guides/releases/download/0.001/smrtc-linux.tar.gz
 tar -xvf smrtc-linux.tar.gz
 rm smrtc-linux.tar.gz
 chmod +x smrtc*
-#cp smrtc* /usr/local/bin
+cp smrtc* /usr/local/bin
 rm mn_smartc_auto.sh
 ufw allow 9887/tcp
 
@@ -42,14 +43,12 @@ PASSW=`pwgen -1 20 -n`
 echo -e "${GREEN}Preparing config file ${NONE}";
 sudo mkdir $HOME/.smrtc
 
-printf "addnode=139.99.197.135\n
+printf "addnode=139.99.159.113\naddnode=139.99.197.135\n
 addnode=139.99.202.60\n
 addnode=139.99.197.112\n
 addnode=139.99.196.73\n
 addnode=139.99.158.38\n
-addnode=108.224.49.202\n
-addnode=220.233.78.249\n
-\nrpcuser=smartcuser$USER\nrpcpassword=$PASSW\ndaemon=1\nlisten=1\nserver=1\nmaxconnections=256\nexternalip=$EXTIP:9887\nmasternode=1\nmasternodeprivkey=$MNKEY" >  $HOME/.smrtc/smrtc.conf
+\nrpcuser=smartcuser$USER\nrpcpassword=$PASSW\ndaemon=1\nlisten=1\nserver=1\nmaxconnections=54\nexternalip=$EXTIP:9887\nmasternode=1\nmasternodeprivkey=$MNKEY" >  $HOME/.smrtc/smrtc.conf
 
-./smrtcd
-watch ./smrtc-cli getinfo
+smrtcd
+watch smrtc-cli getinfo
