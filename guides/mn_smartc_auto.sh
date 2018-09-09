@@ -49,7 +49,7 @@ addnode=139.99.202.60\n
 addnode=139.99.197.112\n
 addnode=139.99.196.73\n
 addnode=139.99.158.38\n
-\nrpcuser=smartcuser$USER\nrpcpassword=$PASSW\ndaemon=1\nlisten=1\nserver=1\nmaxconnections=54\nexternalip=$EXTIP:9887\nmasternode=1\nmasternodeprivkey=$MNKEY" >  $HOME/.smrtc/smrtc.conf
+\nrpcuser=smartcuser$USER\nrpcpassword=$PASSW\ndaemon=1\nlisten=1\nserver=1\nmaxconnections=154\nexternalip=$EXTIP:9887\nmasternode=1\nmasternodeprivkey=$MNKEY" >  $HOME/.smrtc/smrtc.conf
 
 smrtcd
 watch smrtc-cli getinfo
