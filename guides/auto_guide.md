@@ -57,7 +57,7 @@ now move on to linux vps setup.
 Log into your linux Vps and copy the below line and press enter:
 
 MN SCRIPT
-* cd && bash -c "$(wget -O - https://raw.githubusercontent.com/telostia/smartcloud-guides/master/guides/mn_smartc_auto.sh)"
+* cd && bash -c "$(wget -O - https://raw.githubusercontent.com/SMRT-Cloud/smartcloud-guides/master/guides/mn_smartc_auto.sh)"
 
 <!--(posq codebase)
 # cd && bash -c "$(wget -O - https://raw.githubusercontent.com/telostia/smartcloud-guides/master/guides/posqsmartc_auto.sh)"
