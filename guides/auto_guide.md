@@ -18,17 +18,13 @@ find the "SMRTC" folder and double click on it.
 right click on "smrtc.conf" and open it with notepad or any text editor.
 When file is loaded, add more nodes by copy and paste this:
 
-* addnode=104.236.114.249
-* addnode=104.236.118.35
-* addnode=104.131.118.192
-* addnode=104.236.25.11
-* addnode=188.166.209.120
-* addnode=188.166.209.139
+* addnode=95.179.132.243
+* addnode=108.61.165.133
+* addnode=201.80.1.151
+* addnode=95.179.140.3
+* addnode=82.2.156.164
+* addnode=173.249.51.26
 * addnode=167.99.65.33
-* addnode=206.189.36.191
-* addnode=167.99.222.129
-* addnode=167.99.221.205
-* addnode=139.99.202.198
 * addnode=139.99.198.190
 * addnode=206.189.91.171
 * addnode=104.236.25.11
