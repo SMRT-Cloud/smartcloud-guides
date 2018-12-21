@@ -1,7 +1,7 @@
 ----------------------------------------------------
-##SMARTCLOUD COIN SIMPLE AUTO MASTER NODE SETUP GUIDE 
+## SMARTCLOUD COIN SIMPLE AUTO MASTER NODE SETUP GUIDE 
 ----------------------------------------------------
-###update notes
+### update notes
 -updated 22-Dec-2018 for added bootstrap in masternodes to speed up masternode setup process
 
 -----------------------------
