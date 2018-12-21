@@ -1,6 +1,8 @@
 ----------------------------------------------------
-SMARTCLOUD COIN SIMPLE AUTO MASTER NODE SETUP GUIDE 
+##SMARTCLOUD COIN SIMPLE AUTO MASTER NODE SETUP GUIDE 
 ----------------------------------------------------
+###update notes
+-updated 22-Dec-2018 for added bootstrap in masternodes to speed up masternode setup process
 
 -----------------------------
 Windows wallet setup
@@ -30,10 +32,7 @@ When file is loaded, add more nodes by copy and paste this:
 * addnode=139.99.198.190
 * addnode=206.189.91.171
 * addnode=104.236.25.11
-* addnode=139.99.159.113
 * addnode=139.99.196.73
-* addnode=139.99.202.60
-* addnode=139.99.197.112
 * addnode=139.99.158.38
 * addnode=139.99.159.77
 
@@ -57,9 +56,6 @@ Log into your linux Vps and copy the below line and press enter:
 MN SCRIPT
 * cd && bash -c "$(wget -O - https://raw.githubusercontent.com/SMRT-Cloud/smartcloud-guides/master/guides/mn_smartc_auto.sh)"
 
-<!--(posq codebase)
-# cd && bash -c "$(wget -O - https://raw.githubusercontent.com/telostia/smartcloud-guides/master/guides/posqsmartc_auto.sh)"
--->
 when asked to paste genkey, right click your mouse and press enter.
 
 
@@ -77,11 +73,11 @@ Windows wallet to add masternode
 7.   Go to ** Tools -> "Open Masternode Configuration File" 
 8.   Add the following entry: 
 Alias Address Privkey TxHash Output_index 
-?  Alias: MN1 
-?  Address: VPS_IP:PORT 
-?  Privkey: Masternode Private Key (paste the genkey you made earlier)
-?  TxHash: First value from Step 6 
-?  Output index: Second value from Step 6 
+  Alias: MN1 
+  Address: VPS_IP:PORT 
+  Privkey: Masternode Private Key (paste the genkey you made earlier)
+  TxHash: First value from Step 6 
+  Output index: Second value from Step 6 
 9.   Save and close the file. 
 10.   Go to Masternode Tab. If your tab is not shown, please enable it 
 from: Settings - Options - Wallet - Show Masternodes Tab 
@@ -100,6 +96,7 @@ masternode start-alias 0 mn1
  OPTION 2(GUI buttons):
  Click on the main "Masternodes" tab. Select the appropriate mn you want on the list and either right click "Start alias" or
  use the "Start alias" button on the bottom. If you want to start all masternodes on the list, click on "Start All" button on the bottom of the screen.
+ Note that if you edit new masternodes later, you can wait for the masternode confirmations to reach 17 confirms each and just click on 'Start Missing' button to start all unstarted masternodes.
 
 Complete! Thank you for joining the smart cloud coin.
 
