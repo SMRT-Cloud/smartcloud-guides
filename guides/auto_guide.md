@@ -9,7 +9,7 @@ Windows wallet setup
 -----------------------------
 
 Download windows wallet from the follow location:
-https://github.com/SMRT-Cloud/smrtc/releases/tag/v1.0.0
+https://github.com/SMRT-Cloud/smrtc/releases/tag/v1.0.0.2
 
 
 run it. if you cannot get it to sync. got to windows start and type:
