@@ -41,7 +41,7 @@ sudo rm mn_smartc_auto.sh
 sudo rm smrtc-linux-bootstrap*
 sudo wget https://github.com/SMRT-Cloud/smartcloud-guides/releases/download/1.0.0.2/smrtc-linux-bootstrap-140k.tar.gz
 #extract files to data folder
-sudo tar -xvf smrtc-bootstrap-linux-140k.tar.gz -C $HOME/.smrtc/ --strip-components=1
+sudo tar -xvf smrtc-linux-bootstrap-140k.tar.gz -C $HOME/.smrtc/ --strip-components=1
 # clean up files
 sudo rm smrtc-linux-bootstrap*
 
@@ -59,6 +59,8 @@ sudo mkdir $HOME/.smrtc
 
 printf "addnode=139.99.197.135\n
 addnode=139.99.197.112\n
+addnode=139.99.196.73\n
+addnode=139.99.158.38\n
 addnode=167.99.182.127\n
 addnode=50.107.90.184\n
 addnode=80.211.146.15\n
@@ -76,10 +78,6 @@ addnode=139.99.202.198\n
 addnode=139.99.198.190\n
 addnode=206.189.91.171\n
 addnode=104.236.25.11\n
-addnode=139.99.197.135\n
-addnode=139.99.197.112\n
-addnode=139.99.196.73\n
-addnode=139.99.158.38\n
 \nrpcuser=smartcuser$USER\nrpcpassword=$PASSW\ndaemon=1\nlisten=1\nserver=1\nmaxconnections=600\nexternalip=$EXTIP:9887\nmasternode=1\nmasternodeprivkey=$MNKEY" >  $HOME/.smrtc/smrtc.conf
 
 smrtcd
